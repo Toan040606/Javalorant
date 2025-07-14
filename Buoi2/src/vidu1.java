@@ -1,3 +1,4 @@
+// File này file ghi chép, không phận sự miễn thay đổi :v
 import java.util.Scanner;
 
 public class vidu1 {
