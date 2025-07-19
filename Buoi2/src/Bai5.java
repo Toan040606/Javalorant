@@ -3,6 +3,7 @@ public class Bai5 {
         System.out.println("Bảng cửu chương của số 5: ");
         int i;
 //      Bảng cửu chương của số 5 với vòng lặp while
+//      int i = 1; 
 //      while(i <= 10) {
 //          System.out.print("5 x " + i + " = " + 5*i);
 //          System.out.println();
