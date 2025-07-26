@@ -41,19 +41,13 @@ public class Bai5 {
 
         int sum = 0;
         for (int i=0; i<n; i++) {
-            for (int j=i; j<n; j++) {
-                sum += a[i][j];
-                break;
-            }
+            sum += a[i][i];
         }
 
         int phu = n-1;
         for (int i=0; i<n; i++) {
-            for (int j=phu; j>=0; j--) {
-                sum += a[i][j];
-                phu--;
-                break;
-            }
+            sum += a[i][phu];
+            phu--;
         }
         System.out.println("Tổng các phần tử chéo chính và phụ là: " + sum);
     }
