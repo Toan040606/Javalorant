@@ -1,4 +1,4 @@
-import Student.Ex1_Student;
+import Bai1.Ex1_Student;
 
 public class Bai1 {
     public static void main(String[] args) {

@@ -1,26 +1,18 @@
-package manager;
+package Students;
 
 import Students.Student;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class managerStudent {
-    private ArrayList<Student> Students = new ArrayList<>();
+    public ArrayList<Student> Students = new ArrayList<>();
     private Scanner sc = new Scanner(System.in);
-
-    public void StudentsHere() {
-        Students.add(new Student("Nam", 2002, "Thái Bình", 8.3, 8.6, 6, 0));
-        Students.add(new Student("Hà", 2003, "Hải Dương", 7.3, 8.9, 7.3, 2));
-        Students.add(new Student("Thảo", 2004, "Bắc Giang", 8.3, 8.6, 6, 3));
-        Students.add(new Student("Thư", 2005, "Hà Nội", 8.1, 9.3, 6.7, 1));
-        Students.add(new Student("Thuỷ", 2006, "Tuyên Quang", 10, 10, 10, 0));
-    }
 
     public void addStudent() {
         System.out.print("Nhập tên: ");
         String newName = sc.nextLine();
         System.out.print("Nhập năm sinh: ");
-        int newBirth = sc.nextInt();
+        int newBirth = sc.nextInt(); sc.nextLine();
         System.out.print("Nhập địa chỉ: ");
         String newAddress = sc.nextLine();
         System.out.print("Nhập điểm TX1: ");
@@ -35,4 +27,11 @@ public class managerStudent {
         Students.add(new Student(newName, newBirth, newAddress, newPoint1, newPoint2, newFinalPoint, newOffSchool));
         System.out.println("Đã thêm sinh viên.");
     }
+
+    public void getList() {
+        for (Student student : Students) {
+            System.out.print(student + " ");
+        }
+    }
+
 }

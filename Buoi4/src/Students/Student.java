@@ -53,4 +53,17 @@ public class Student {
     public double getGPA() {
         return point1*0.2 + point2*0.3 + finalPoint*0.5;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", yearOfBirth=" + yearOfBirth +
+                ", address='" + address + '\'' +
+                ", point1=" + point1 +
+                ", point2=" + point2 +
+                ", finalPoint=" + finalPoint +
+                ", offSchool=" + offSchool +
+                '}';
+    }
 }

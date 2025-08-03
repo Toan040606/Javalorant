@@ -1,4 +1,4 @@
-import conGetSet_Student.Ex2_Student;
+import Bai2.Ex2_Student;
 
 public class Bai2 {
     public static void main(String[] args) {
