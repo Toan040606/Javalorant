@@ -1,4 +1,4 @@
-package Car;
+package Bai3;
 
 public class Ex3_Car {
     private String brand;

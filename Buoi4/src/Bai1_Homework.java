@@ -40,10 +40,10 @@ public class Bai1_Homework {
             switch (choice) {
                 case 1:
                     n++;
-                    manager.addStudent();
+                    manager.addStudent(s);
                     break;
                 case 2:
-                    manager.getList();
+                    manager.getList(s, n);
                     break;
                 case 3:
 
@@ -58,7 +58,7 @@ public class Bai1_Homework {
                     System.out.print("Nhập tên, tuổi, địa chỉ của sinh viên cần xóa: ");
                     String name = sc.next();
                     int age = sc.nextInt();
-                    String address = sc.next();
+                    String address = sc.nextLine();
                     break;
                 case 0:
                     return;
